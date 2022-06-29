@@ -9,6 +9,7 @@ import {
   VisibilityOff,
 } from "@material-ui/icons";
 import "./account.scss";
+
 const Account = () => {
   //login register control
   const switcher = useRef();
@@ -94,10 +95,7 @@ const Account = () => {
             </form>
           </div>
           {/*  */}
-          <div
-            className="register-container register-container-switched"
-            ref={switchRegister}
-          >
+          <div className="register-container" ref={switchRegister}>
             <form className="register-form">
               <div className="register-input-container">
                 <FaceOutlined />
